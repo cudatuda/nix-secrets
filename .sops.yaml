@@ -1,7 +1,9 @@
 keys:
   - &host_work age1y9dsytfp0zg3ckygxxu78hj3nrc9au5h8s9yezneyytk2ee97yss33yphc
+  - &host_home age1tsd9h6fjz8qxt3ah3vw4r5acgxhrzazvx6ycttvqs2jaxet4tp8sjutq4m
 creation_rules:
   - path_regex: secrets.yaml$
     key_groups:
       - age:
           - *host_work
+          - *host_home

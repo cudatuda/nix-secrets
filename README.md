@@ -1,9 +1,5 @@
 # nix-secrets
 ## Commands
->init nix shell  
->```
->nix-shell .
->```  
 
 1. convert host **public** key to **age** format
 ``` shell
@@ -17,6 +13,9 @@ mkdir -p ~/.config/sops/age/ && sudo ssh-to-age -private-key -i /etc/ssh/ssh_hos
 ``` shell
 sops secrets.yaml
 ```
+4. add new key
+    - insert key into `.sops.yaml`
+    - run `sops updatekeys secrets.yaml`
 
 ## To add
 - ssh config
